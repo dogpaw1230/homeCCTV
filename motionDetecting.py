@@ -73,7 +73,7 @@ if cap.isOpened():
         if diff_cnt > max_diff:
             is_record = True
             if not on_record:
-                file_path = os.path.join(save_dir, f'{file_name}.avi')
+                file_path = os.path.join(save_dir, f'{file_name}.mp4')
                 out = cv2.VideoWriter(file_path, fourcc, fps, size)
                 print(f"Recording started: {file_path}")
                 cnt_record = max_cnt_record
