@@ -1,5 +1,4 @@
 from datetime import datetime
-
 import cv2
 import numpy as np
 import os
@@ -25,7 +24,7 @@ if not os.path.exists(save_dir):
     os.makedirs(save_dir)
 
 fps = 30.0
-fourcc = cv2.VideoWriter_fourcc(*'DIVX')  # 인코딩 포맷 문자
+fourcc = cv2.VideoWriter_fourcc(*'mp4x')  # 인코딩 포맷 문자
 width = cap.get(cv2.CAP_PROP_FRAME_WIDTH)
 height = cap.get(cv2.CAP_PROP_FRAME_HEIGHT)
 size = (int(width), int(height))  # 프레임 크기
